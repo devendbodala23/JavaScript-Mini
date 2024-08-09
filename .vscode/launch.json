@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "chrome",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Python: File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "justMyCode": true
+        }
+    ]
+}
